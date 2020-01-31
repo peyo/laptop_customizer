@@ -13,12 +13,12 @@ Divide the components into 6 parts:
 
 <pre>
 App---(1a) FeatureList---(2a) FeatureDetails
-  \            \
-   \            \---(2a) FeatureItem
+  \                 \
+   \                 \---(2a) FeatureItem
     \
      \---(1b) SummaryList---(2b) SummaryItem
-                  \
-                   \---(2b) Total
+                       \
+                        \---(2b) Total
 </pre>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
