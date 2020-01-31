@@ -1,7 +1,7 @@
 # Laptop Customizer
 _Starter project for React course_
 
-This exercise is to help with (1) refactoring a single component into multiple components and (2) passing state through callback functions and updating the state through props.
+This exercise is to learn about (1) refactoring a single component into multiple components and (2) passing state through callback functions and updating the state through props.
 
 # Problem
 A single component has grown to be quite large and is doing too many different things. All the funactionality has been built into a single component!
