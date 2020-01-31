@@ -11,6 +11,7 @@ Refactor the app using component-based organization.
 
 Divide the components into 6 parts:
 
+<pre>
 App---(1a) FeatureList---(2a) FeatureDetails
   \            \
    \            \---(2a) FeatureItem
@@ -18,5 +19,6 @@ App---(1a) FeatureList---(2a) FeatureDetails
      \---(1b) SummaryList---(2b) SummaryItem
                   \
                    \---(2b) Total
+</pre>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
