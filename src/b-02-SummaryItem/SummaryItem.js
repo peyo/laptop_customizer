@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class SummaryItem extends React.Component {
   render() {
@@ -6,14 +6,14 @@ class SummaryItem extends React.Component {
       feature,
       selected,
       idx
-    } = this.props
+    } = this.props;
 
-    const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD'
+    const USCurrencyFormat = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD"
     });
 
-    const featureHash = feature + '-' + idx;
+    const featureHash = feature + "-" + idx;
     const selectedOption = selected[feature];
 
     return (

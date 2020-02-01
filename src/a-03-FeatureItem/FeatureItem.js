@@ -1,7 +1,7 @@
-import React from 'react';
-import slugify from 'slugify';
+import React from "react";
+import slugify from "slugify";
 
-class FeatureItem extends React.Component {  
+class FeatureItem extends React.Component {
   render() {
     const {
       item,
@@ -10,13 +10,13 @@ class FeatureItem extends React.Component {
       updateFeature
     } = this.props;
 
-    const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD'
+    const USCurrencyFormat = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD"
     });
 
     const itemHash = slugify(JSON.stringify(item));
-    
+
     return (
       <div key={itemHash} className="feature__item">
         <input
@@ -29,7 +29,7 @@ class FeatureItem extends React.Component {
         />
         <label htmlFor={itemHash} className="feature__label">
           {item.name} ({USCurrencyFormat.format(item.cost)})
-            </label>
+        </label>
       </div>
     );
   }

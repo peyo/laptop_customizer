@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import './App.css';
-import FeatureList from './a-01-FeatureList/FeatureList';
-import SummaryList from './b-01-SummaryList/SummaryList'
+import "./App.css";
+import FeatureList from "./a-01-FeatureList/FeatureList";
+import SummaryList from "./b-01-SummaryList/SummaryList";
 
 class App extends Component {
   state = {
     selected: {
       Processor: {
-        name: '17th Generation Intel Core HB (7 Core with donut spare)',
+        name: "17th Generation Intel Core HB (7 Core with donut spare)",
         cost: 700
       },
-      'Operating System': {
-        name: 'Ubuntu Linux 16.04',
+      "Operating System": {
+        name: "Ubuntu Linux 16.04",
         cost: 200
       },
-      'Video Card': {
-        name: 'Toyota Corolla 1.5v',
+      "Video Card": {
+        name: "Toyota Corolla 1.5v",
         cost: 1150.98
       },
       Display: {
@@ -32,7 +32,7 @@ class App extends Component {
     this.setState({
       selected
     });
-  };
+  }
 
   render() {
     const { features } = this.props;
@@ -47,10 +47,11 @@ class App extends Component {
           <FeatureList
             features={features}
             selected={selected}
-            updateFeature={(feature, newValue) => this.updateFeature(feature, newValue)}
+            updateFeature={(feature, newValue) =>
+              this.updateFeature(feature, newValue)
+            }
           />
-          <SummaryList
-            selected={selected}/>
+          <SummaryList selected={selected} />
         </main>
       </div>
     );

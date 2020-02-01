@@ -7,24 +7,25 @@ class SummaryList extends React.Component {
     const { selected } = this.props;
 
     const summary = Object.keys(selected).map((feature, idx) => {
-      const featureHash = feature + '-' + idx;
-      
+      const featureHash = feature + "-" + idx;
+
       return (
         <SummaryItem
           key={featureHash}
           feature={feature}
           selected={selected}
-          idx={idx} />
-      )
+          idx={idx}
+        />
+      );
     });
-  
+
     return (
       <section className="main__summary">
-        <h2> Your cart</h2 >
-          {summary}
-        <Total selected={selected}/>
+        <h2> Your cart</h2>
+        {summary}
+        <Total selected={selected} />
       </section>
-    )
+    );
   }
 }
 

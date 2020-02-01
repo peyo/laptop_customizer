@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class Total extends React.Component {
   render() {
@@ -9,9 +9,9 @@ class Total extends React.Component {
       0
     );
 
-    const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD'
+    const USCurrencyFormat = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD"
     });
 
     return (
@@ -21,7 +21,7 @@ class Total extends React.Component {
           {USCurrencyFormat.format(total)}
         </div>
       </div>
-    )
+    );
   }
 }
 
