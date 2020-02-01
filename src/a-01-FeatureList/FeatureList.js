@@ -6,12 +6,14 @@ class FeatureList extends React.Component {
     const {
       features,
       updateFeature,
-      selected
+      selected,
     } = this.props;
 
     const featuresA = Object.keys(features).map((feature, idx) => {
+      const featureHash = feature + "-" + idx;
       return (
         <FeatureDetails
+          key={featureHash}
           features={features}
           updateFeature={updateFeature}
           selected={selected}
